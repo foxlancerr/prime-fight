@@ -1,5 +1,7 @@
-"use client"
+"use client";
+import HitShotHeader from "@/components/base/HitShotHeader";
 import { ThemeProvider } from "./theme-provider";
+import HitShotFooter from "@/components/base/HitShotFooter";
 
 export default function ConfigProviders({
   children,
@@ -13,7 +15,11 @@ export default function ConfigProviders({
       enableSystem
       disableTransitionOnChange
     >
-      {children}
+      <div className="flex flex-col min-h-screen">
+        <HitShotHeader></HitShotHeader>
+        <main className="flex-grow">{children}</main>
+        <HitShotFooter></HitShotFooter>
+      </div>
     </ThemeProvider>
   );
 }
