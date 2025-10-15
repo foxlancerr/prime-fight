@@ -1,10 +1,15 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/effect-fade";
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-    /* black shades */
+  /* black shades */
   --color-black: #171621;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -184,8 +189,6 @@
   --button-hover: oklch(0.62 0.18 32); /* Darker on hover */
   --button-selected: oklch(0.55 0.16 30); /* Even darker when 
   selected */
-
-
 }
 
 @layer base {
