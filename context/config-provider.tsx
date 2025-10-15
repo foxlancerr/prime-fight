@@ -15,7 +15,7 @@ export default function ConfigProviders({
       enableSystem
       disableTransitionOnChange
     >
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen relative">
         <HitShotHeader></HitShotHeader>
         <main className="flex-grow">{children}</main>
         <HitShotFooter></HitShotFooter>
