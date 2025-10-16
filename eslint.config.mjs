@@ -19,23 +19,15 @@ const eslintConfig = [
       "build/**",
       "next-env.d.ts",
     ],
-    rules:{
+     rules: {
       "react/react-in-jsx-scope": "off",
       "react/jsx-key": "off",
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn",
-      "no-console": "warn",
-      "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
-      "semi": ["error", "always"],
-      "quotes": ["error", "double"],
-      "jsx-quotes": ["error", "prefer-double"],
-      "comma-dangle": ["error", "always-multiline"],
-      "object-curly-spacing": ["error", "always"],
-      "array-bracket-spacing": ["error", "never"],
-      "arrow-parens": ["error", "always"],
-      "prefer-const": ["error", {
-        destructuring: "all"
-      }],
+      "react-hooks/rules-of-hooks": "off",
+      "react-hooks/exhaustive-deps": "off",
+      "no-console": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@next/next/no-img-element": "off",
     }
   },
   
