@@ -36,7 +36,7 @@ interface MenuItem {
 const HitShotHeader = () => {
   const { logo, menu, auth } = navbarData;
   return (
-    <header className="py-4 background sticky top-0 z-50 w-full backdrop-blur transition-colors duration-300 bg-transparent">
+    <header className="py-4 background fixed top-0 z-50 w-full backdrop-blur transition-colors duration-300 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Desktop Menu */}
         <nav className="hidden justify-between lg:flex">
