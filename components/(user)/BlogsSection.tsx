@@ -10,92 +10,99 @@ export default function BlogsSection() {
   const swiperRef = useRef<any>(null);
 
   const slides = [
-  { 
-    id: 1, 
-    title: "Sports & Racing", 
-    image: "/images/categries/slide1.png",
-    description: "High-speed racing and competitive sports games to test your reflexes."
-  },
-  { 
-    id: 2, 
-    title: "Adventure Games", 
-    image: "/images/categries/slide2.png",
-    description: "Embark on epic journeys and explore immersive story-driven worlds."
-  },
-  { 
-    id: 3, 
-    title: "Action Games", 
-    image: "/images/categries/slide3.png",
-    description: "Fast-paced combat and adrenaline-fueled missions await you."
-  },
-  { 
-    id: 4, 
-    title: "Casual & Puzzle", 
-    image: "/images/categries/slide4.png",
-    description: "Relax and challenge your mind with fun puzzles and casual gameplay."
-  },
-  { 
-    id: 5, 
-    title: "Fantasy & RPG", 
-    image: "/images/categries/slide5.png",
-    description: "Dive into magical worlds and shape your destiny through epic quests."
-  },
-  { 
-    id: 6, 
-    title: "Multiplayer", 
-    image: "/images/categries/slide6.png",
-    description: "Team up or compete with players around the world in thrilling matches."
-  },
-  { 
-    id: 7, 
-    title: "Sports & Racing", 
-    image: "/images/categries/slide1.png",
-    description: "Compete in exciting sports and race your way to victory."
-  },
-  { 
-    id: 8, 
-    title: "Adventure Games", 
-    image: "/images/categries/slide2.png",
-    description: "Explore mysterious lands filled with danger and discovery."
-  },
-  { 
-    id: 9, 
-    title: "Action Games", 
-    image: "/images/categries/slide3.png",
-    description: "Experience heart-pounding action and intense battles."
-  },
-  { 
-    id: 10, 
-    title: "Casual & Puzzle", 
-    image: "/images/categries/slide4.png",
-    description: "Simple, fun, and addictive puzzles for players of all ages."
-  },
-  { 
-    id: 11, 
-    title: "Fantasy & RPG", 
-    image: "/images/categries/slide5.png",
-    description: "Create your hero and embark on unforgettable adventures."
-  },
-  { 
-    id: 12, 
-    title: "Multiplayer", 
-    image: "/images/categries/slide6.png",
-    description: "Join friends or challenge rivals in competitive multiplayer modes."
-  },
-    { 
-    id: 13, 
-    title: "Sports & Racing", 
-    image: "/images/categries/slide1.png",
-    description: "Compete in exciting sports and race your way to victory."
-  },
-  { 
-    id: 14, 
-    title: "Adventure Games", 
-    image: "/images/categries/slide2.png",
-    description: "Explore mysterious lands filled with danger and discovery."
-  },
-];
-
+    {
+      id: 1,
+      title: "Sports & Racing",
+      image: "/images/categries/slide1.png",
+      description:
+        "High-speed racing and competitive sports games to test your reflexes.",
+    },
+    {
+      id: 2,
+      title: "Adventure Games",
+      image: "/images/categries/slide2.png",
+      description:
+        "Embark on epic journeys and explore immersive story-driven worlds.",
+    },
+    {
+      id: 3,
+      title: "Action Games",
+      image: "/images/categries/slide3.png",
+      description:
+        "Fast-paced combat and adrenaline-fueled missions await you.",
+    },
+    {
+      id: 4,
+      title: "Casual & Puzzle",
+      image: "/images/categries/slide4.png",
+      description:
+        "Relax and challenge your mind with fun puzzles and casual gameplay.",
+    },
+    {
+      id: 5,
+      title: "Fantasy & RPG",
+      image: "/images/categries/slide5.png",
+      description:
+        "Dive into magical worlds and shape your destiny through epic quests.",
+    },
+    {
+      id: 6,
+      title: "Multiplayer",
+      image: "/images/categries/slide6.png",
+      description:
+        "Team up or compete with players around the world in thrilling matches.",
+    },
+    {
+      id: 7,
+      title: "Sports & Racing",
+      image: "/images/categries/slide1.png",
+      description: "Compete in exciting sports and race your way to victory.",
+    },
+    {
+      id: 8,
+      title: "Adventure Games",
+      image: "/images/categries/slide2.png",
+      description: "Explore mysterious lands filled with danger and discovery.",
+    },
+    {
+      id: 9,
+      title: "Action Games",
+      image: "/images/categries/slide3.png",
+      description: "Experience heart-pounding action and intense battles.",
+    },
+    {
+      id: 10,
+      title: "Casual & Puzzle",
+      image: "/images/categries/slide4.png",
+      description:
+        "Simple, fun, and addictive puzzles for players of all ages.",
+    },
+    {
+      id: 11,
+      title: "Fantasy & RPG",
+      image: "/images/categries/slide5.png",
+      description: "Create your hero and embark on unforgettable adventures.",
+    },
+    {
+      id: 12,
+      title: "Multiplayer",
+      image: "/images/categries/slide6.png",
+      description:
+        "Join friends or challenge rivals in competitive multiplayer modes.",
+    },
+    {
+      id: 13,
+      title: "Sports & Racing",
+      image: "/images/categries/slide1.png",
+      description: "Compete in exciting sports and race your way to victory.",
+    },
+    {
+      id: 14,
+      title: "Adventure Games",
+      image: "/images/categries/slide2.png",
+      description: "Explore mysterious lands filled with danger and discovery.",
+    },
+  ];
 
   const chunkArray = <T,>(array: T[], size: number): T[][] => {
     return Array.from({ length: Math.ceil(array.length / size) }, (_, i) =>
@@ -220,7 +227,7 @@ export default function BlogsSection() {
                             {sld.title}
                           </HitShotTitle>
 
-                                                    <HitShotText
+                          <HitShotText
                             as="p"
                             size="xsmall"
                             className="relative z-10 text-white"
@@ -240,7 +247,7 @@ export default function BlogsSection() {
           <div className="block sm:hidden w-full">
             <Swiper
               spaceBetween={20}
-              slidesPerView={1.2}
+              slidesPerView={1.5}
               autoplay={{ delay: 3000 }}
               loop={true}
               modules={[Autoplay, Pagination]}
@@ -264,6 +271,13 @@ export default function BlogsSection() {
                     >
                       {slide.title}
                     </HitShotTitle>
+                    <HitShotText
+                      as="p"
+                      size="xsmall"
+                      className="relative z-10 text-white"
+                    >
+                      {slide.description}
+                    </HitShotText>
                   </div>
                 </SwiperSlide>
               ))}
