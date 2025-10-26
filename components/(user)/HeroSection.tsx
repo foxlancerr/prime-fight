@@ -154,7 +154,7 @@ swiperRef,
                     <div className="text-center flex flex-row items-center gap-4">
                       <HitShotText
                         as="span"
-                        className="text-white p-1 transform -rotate-45 rounded-full border-yellow-400 border-2 inline-flex shrink-0"
+                        className="text-white w-8 h-8 items-center justify-center transform -rotate-45 rounded-full border-yellow-400 border-2 inline-flex shrink-0 "
                       >
                         m
                       </HitShotText>
@@ -274,7 +274,7 @@ const DesktopHeroSection = ({
                     <div className="text-center flex flex-row items-center gap-4">
                       <HitShotText
                         as="span"
-                        className="text-white p-1 transform -rotate-45 rounded-full border-yellow-400 border-2 inline-flex shrink-0"
+                     className="text-white w-8 h-8 items-center justify-center transform -rotate-45 rounded-full border-yellow-400 border-2 inline-flex shrink-0 "
                       >
                         m
                       </HitShotText>
